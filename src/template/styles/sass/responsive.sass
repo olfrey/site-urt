@@ -224,15 +224,77 @@
 	.steps
 		background: none
 		.case
-			padding-bottom: 35px
+			padding-bottom: 0
+		&__list
+			margin-left: -10px
+			margin-right: -10px
+			
 		&__item
 			margin-right: auto
 			margin-left: auto
 			margin-top: 0 !important
-			width: 20%
+			width: 33.333%
 
 		&__content
+			// display: none
+			position: relative
+			width: auto
+			left: 0
+			top: 0
+			transform: none !important
+			margin-left: 0
+			opacity: 1
+			&:before
+				display: none
+
+		&__btn
 			display: none
+
+		&__list
+			justify-content: center
+
+		&__item
+			width: 33.333%
+			margin-bottom: 35px
+			margin-left: 0
+			margin-right: 0
+			padding-left: 10px
+			padding-right: 10px
+			
+		&__count
+			margin-bottom: 10px
+			&-num
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 10px
+			&-text
+				padding-left: 0
+				width: auto
+				text-align: center
+				font-weight: 700
+				font-size: 20px
+				br
+					display: none
+
+		&__subtitle
+
+			
+
+		&__text
+			font-size: 16px
+			text-align: center
+			
+
+	.steps__count-num
+		&:before
+			opacity: 1
+		span
+			color: #fff
+
+
+
+	.steps__count-text
+		color: #000 !important
 			
 
 	.provider
@@ -386,26 +448,7 @@
 		&__title
 			margin-bottom: 25px
 			
-		&__list
-			justify-content: center
-
-		&__item
-			width: 33.333%
-			margin-bottom: 35px
-			margin-left: 0
-			margin-right: 0
-			
-		&__count
-			&-num
-				margin-left: auto
-				margin-right: auto
-				margin-bottom: 10px
-			&-text
-				padding-left: 0
-				width: auto
-				text-align: center
-				br
-					display: none
+		
 			
 
 	.provider
@@ -458,6 +501,8 @@
 			font-size: 18px
 			line-height: 20px
 			
+	.popup__images
+		display: none
 			
 	.popup__images-item
 		img
@@ -465,7 +510,19 @@
 			margin-right: auto
 
 	.footer
-		display: none
+		// display: none
+		background: none
+		margin-top: 0
+		min-height: 1px
+		padding-top: 20px
+		padding-bottom: 20px
+		&__call
+			width: 225px
+			text-align: center
+
+		&__phone
+			margin-left: auto
+			margin-right: auto
 
 
 
@@ -546,7 +603,9 @@
 
 	.steps
 		&__item
-			width: 50%
+			width: 100%
+
+
 			
 
 	.provider
@@ -604,7 +663,63 @@
 			width: 100%
 			
 			
+	.footer
+		.case
+			display: block
+		&__logo
+			margin-bottom: 13px
 
+		&__phone
+			margin-bottom: 10px
+			
+			
+		&__contacts, &__call
+			// max-width: 280px
+			margin-left: auto
+			margin-right: auto
+			
+		&__logo, &__call, &__address, &__btn
+			width: 100%
+
+		&__call
+			display: block
+
+		&__logo
+			margin-right: 0
+			img
+				margin-left: auto
+				margin-right: auto
+			
+
+		&__address
+			text-align: center
+			
+			
+			
+	.popup
+		&__close
+			width: 30px
+			height: 30px
+
+		&__title
+			font-size: 24px
+			padding-left: 15px
+			padding-right: 15px
+			
+
+	.input
+		&__wrap
+			font-size: 17px
+			padding-left: 15px
+			padding-right: 15px
+				
+
+	.popup__right .popup__title
+		font-size: 20px
+		padding-left: 0
+		padding-right: 0
+
+			
 
 
 			

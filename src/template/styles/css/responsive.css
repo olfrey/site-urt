@@ -147,14 +147,64 @@
   .steps {
     background: none; }
     .steps .case {
-      padding-bottom: 35px; }
+      padding-bottom: 0; }
+    .steps__list {
+      margin-left: -10px;
+      margin-right: -10px; }
     .steps__item {
       margin-right: auto;
       margin-left: auto;
       margin-top: 0 !important;
-      width: 20%; }
+      width: 33.333%; }
     .steps__content {
+      position: relative;
+      width: auto;
+      left: 0;
+      top: 0;
+      -webkit-transform: none !important;
+          -ms-transform: none !important;
+              transform: none !important;
+      margin-left: 0;
+      opacity: 1; }
+      .steps__content:before {
+        display: none; }
+    .steps__btn {
       display: none; }
+    .steps__list {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .steps__item {
+      width: 33.333%;
+      margin-bottom: 35px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 10px;
+      padding-right: 10px; }
+    .steps__count {
+      margin-bottom: 10px; }
+      .steps__count-num {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px; }
+      .steps__count-text {
+        padding-left: 0;
+        width: auto;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px; }
+        .steps__count-text br {
+          display: none; }
+    .steps__text {
+      font-size: 16px;
+      text-align: center; }
+  .steps__count-num:before {
+    opacity: 1; }
+  .steps__count-num span {
+    color: #fff; }
+  .steps__count-text {
+    color: #000 !important; }
   .provider__list {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -287,26 +337,6 @@
     padding-bottom: 0; }
   .steps__title {
     margin-bottom: 25px; }
-  .steps__list {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .steps__item {
-    width: 33.333%;
-    margin-bottom: 35px;
-    margin-left: 0;
-    margin-right: 0; }
-  .steps__count-num {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px; }
-  .steps__count-text {
-    padding-left: 0;
-    width: auto;
-    text-align: center; }
-    .steps__count-text br {
-      display: none; }
   .provider {
     padding-top: 30px; }
   .provider {
@@ -341,11 +371,23 @@
       margin-bottom: 10px;
       font-size: 18px;
       line-height: 20px; }
+  .popup__images {
+    display: none; }
   .popup__images-item img {
     margin-left: auto;
     margin-right: auto; }
   .footer {
-    display: none; } }
+    background: none;
+    margin-top: 0;
+    min-height: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .footer__call {
+      width: 225px;
+      text-align: center; }
+    .footer__phone {
+      margin-left: auto;
+      margin-right: auto; } }
 
 @media screen and (max-width: 767px) {
   .case {
@@ -407,7 +449,7 @@
     .reviews__list .slick-arrow {
       margin-top: -35px; }
   .steps__item {
-    width: 50%; }
+    width: 100%; }
   .provider {
     padding-top: 35px;
     padding-bottom: 15px; }
@@ -451,7 +493,42 @@
     font-size: 20px;
     text-align: center; }
   .form__btn {
-    width: 100%; } }
+    width: 100%; }
+  .footer .case {
+    display: block; }
+  .footer__logo {
+    margin-bottom: 13px; }
+  .footer__phone {
+    margin-bottom: 10px; }
+  .footer__contacts, .footer__call {
+    margin-left: auto;
+    margin-right: auto; }
+  .footer__logo, .footer__call, .footer__address, .footer__btn {
+    width: 100%; }
+  .footer__call {
+    display: block; }
+  .footer__logo {
+    margin-right: 0; }
+    .footer__logo img {
+      margin-left: auto;
+      margin-right: auto; }
+  .footer__address {
+    text-align: center; }
+  .popup__close {
+    width: 30px;
+    height: 30px; }
+  .popup__title {
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .input__wrap {
+    font-size: 17px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .popup__right .popup__title {
+    font-size: 20px;
+    padding-left: 0;
+    padding-right: 0; } }
 
 @media screen and (max-width: 440px) {
   .panel__btn-callback {

@@ -65,4 +65,10 @@ $(document).ready(function($) {
 		$(this).toggleClass('hum_toggle');
 		navigation.toggleClass('panel__nav_toggle');
 	});
+
+
+	$('.panel__nav a').click(function(event) {
+		humburger.removeClass('hum_toggle');
+		navigation.removeClass('panel__nav_toggle');
+	});
 });
